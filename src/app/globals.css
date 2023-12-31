@@ -17,11 +17,20 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #09091c;
 }
+
+.header{
+  view-transition-name: page-header;
+}
+
+::view-transition-old(page-header) {
+  transition: all ease-in-out 1s;
+}
+
+::view-transition-new(page-header) {
+  transition: all ease-in-out 1s;
+}
+
+
+
